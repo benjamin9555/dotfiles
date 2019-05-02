@@ -16,20 +16,7 @@ if test -n "$BASH_VERSION"; then
     echo "Installing bash-it"
     git clone --depth=1 "https://github.com/Bash-it/bash-it.git" "$HOME/.bash_it"
     $HOME/.bash_it/install.sh --silent
-    source $HOME/.bashrc
-
-    # bash-it configuration
-    echo "Configuring bash-it"
-    for comp in bash-it git pip pip3 system; do
-      bash-it enable completion "$comp"
-    done
-    for plg in alias-completion base git virtualenv; do
-      bash-it enable plugin "$plg"
-    done
-    for ali in general git; do
-      bash-it enable alias "$ali"
-    done
   fi
-
 fi
+
 # TODO zsh version
