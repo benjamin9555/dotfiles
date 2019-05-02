@@ -1,2 +1,5 @@
 "\e[A": history-search-backward
 "\e[B": history-search-forward
+
+set history-size 10000000
+
