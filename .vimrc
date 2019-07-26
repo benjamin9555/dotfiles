@@ -67,6 +67,7 @@ filetype plugin indent on    " required
 "
 " see :h vundle for more details or wiki for FAQ
 
+colorscheme peachpuff
 inoremap jk <ESC>
 let mapleader = "\<Space>"
 filetype plugin indent on
