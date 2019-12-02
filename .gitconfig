@@ -1,5 +1,5 @@
 [user]
-	email = gallussb@student.ethz.ch
+	email = bgallusser@googlemail.com
 	name = Benjamin Gallusser
 [alias]
     tree  =  log --graph --decorate --pretty=format:'%C(yellow)%h %Cred%cr %Cblue(%an)%C(cyan)%d%Creset %s' --abbrev-commit --all
