@@ -53,6 +53,9 @@ Plugin 'ctrlpvim/ctrlp.vim'
 " Autopep8 formatting for python
 Plugin 'tell-k/vim-autopep8'
 
+" Emojis in vim
+Plugin 'https://gitlab.com/gi1242/vim-emoji-ab/'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -146,7 +149,7 @@ endif
 set backspace=indent,eol,start
 
 " Settings for YouCompleteMe
-let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
+"let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
 
 " For python syntax checking with syntastic
 let python_highlight_all=1
@@ -163,3 +166,7 @@ nnoremap <CR> o<Esc>k
 
 " Split line on cursor
 nnoremap K i<CR><Esc>
+
+" Enable emojis for certain file types
+au FileType html,php,markdown,mmd,text,mail,gitcommit
+    \ runtime macros/emoji-ab.vim
