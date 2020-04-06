@@ -10,3 +10,4 @@ Also using
 1. Install yadm as described [here](https://yadm.io/docs/install#)
 1. Clone the repo with `yadm clone <url>`
 1. Confirm to run yadm's bootstrap program
+1. (Install requirements for [tmux-yank](https://github.com/tmux-plugins/tmux-yank))
