@@ -1,0 +1,5 @@
+create_default_packages:
+  - autopep8
+  - flake8
+  - pylint
+  - ipython
