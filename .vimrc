@@ -96,7 +96,7 @@ au FileType html,php,markdown,mmd,text,mail,gitcommit
 "### Custom stuff ###"
 
 colorscheme wombat256i
-inoremap jk <ESC>
+inoremap lk <ESC>
 let mapleader = "\<Space>"
 filetype plugin indent on
 syntax on
@@ -177,10 +177,12 @@ endif
 "problems with backspace in vi 8.0"
 set backspace=indent,eol,start
 
-
 " Add new line below without entering insert mode
 nnoremap <CR> o<Esc>k
 
 " Split line on cursor
 nnoremap K i<CR><Esc>
 
+" move with j and k in autocomplete list
+inoremap <expr> j ((pumvisible())?("\<C-n>"):("j"))
+inoremap <expr> k ((pumvisible())?("\<C-p>"):("k"))
