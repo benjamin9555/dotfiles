@@ -3,3 +3,4 @@ create_default_packages:
   - flake8
   - pylint
   - ipython
+  - ConfigArgParse
