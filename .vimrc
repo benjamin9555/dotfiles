@@ -186,3 +186,9 @@ nnoremap K i<CR><Esc>
 " move with j and k in autocomplete list
 inoremap <expr> j ((pumvisible())?("\<C-n>"):("j"))
 inoremap <expr> k ((pumvisible())?("\<C-p>"):("k"))
+
+" Folding, in python
+au BufNewFile,BufRead *.py
+    \ set foldmethod=indent
+nnoremap <space> za
+set foldlevel=99
