@@ -96,7 +96,7 @@ au FileType html,php,markdown,mmd,text,mail,gitcommit
 "### Custom stuff ###"
 
 colorscheme wombat256i
-inoremap lk <ESC>
+inoremap jk <ESC>
 let mapleader = "\<Space>"
 filetype plugin indent on
 syntax on
