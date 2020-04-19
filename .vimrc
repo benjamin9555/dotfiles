@@ -44,6 +44,9 @@ Plugin 'jiangmiao/auto-pairs'
 " Emojis in vim
 Plugin 'https://gitlab.com/gi1242/vim-emoji-ab/'
 
+" Generate python docstrings
+Plugin 'heavenshell/vim-pydocstring'
+
 " Color schemes
 Plugin 'joshdick/onedark.vim'
 Plugin 'dsolstad/vim-wombat256i'
@@ -92,6 +95,10 @@ let g:ctrlp_working_path_mode = 'ra'
 """ Emoji-ab """
 au FileType html,php,markdown,mmd,text,mail,gitcommit
     \ runtime macros/emoji-ab.vim
+
+""" Pydocstring """
+let g:pydocstring_doq_path = '$CONDA_PREFIX/bin/doq'
+let g:pydocstring_formatter = 'google'
 
 "### Custom stuff ###"
 
