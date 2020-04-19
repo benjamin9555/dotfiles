@@ -97,7 +97,7 @@ au FileType html,php,markdown,mmd,text,mail,gitcommit
     \ runtime macros/emoji-ab.vim
 
 """ Pydocstring """
-let g:pydocstring_doq_path = '$CONDA_PREFIX/bin/doq'
+let g:pydocstring_doq_path = '$HOME/miniconda3/bin/doq'
 let g:pydocstring_formatter = 'google'
 
 "### Custom stuff ###"

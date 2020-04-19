@@ -250,7 +250,8 @@ good-names=i,
            _,
            x,
            y,
-           z
+           z,
+           p
 
 # Regular expression matching good variable names
 #good-names-rgxs=[a-z][a-z]
