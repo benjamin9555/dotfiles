@@ -4,3 +4,7 @@ create_default_packages:
   - pylint
   - ipython
   - ConfigArgParse
+  - pudb
+channels:
+  - defaults
+  - conda-forge
