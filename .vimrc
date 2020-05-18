@@ -109,10 +109,15 @@ filetype plugin indent on
 syntax on
 set encoding=utf-8
 " Spell-checking for certain file types only
-augroup Spell
+augroup textSpell
     autocmd!
     autocmd FileType text setlocal spell spelllang=en_us
     autocmd BufRead,BufNewFile *.txt setlocal spell spelllang=en_us
+augroup END
+augroup markdownSpell
+    autocmd!
+    autocmd FileType markdown setlocal spell spelllang=en_us
+    autocmd BufRead,BufNewFile *.md setlocal spell spelllang=en_us
 augroup END
 
 " Tab sizes
