@@ -47,6 +47,9 @@ Plugin 'https://gitlab.com/gi1242/vim-emoji-ab/'
 " Generate python docstrings
 Plugin 'heavenshell/vim-pydocstring'
 
+" Count search matches
+Plugin 'google/vim-searchindex'
+
 " Color schemes
 Plugin 'joshdick/onedark.vim'
 Plugin 'dsolstad/vim-wombat256i'
