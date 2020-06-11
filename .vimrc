@@ -50,6 +50,10 @@ Plugin 'heavenshell/vim-pydocstring'
 " Count search matches
 Plugin 'google/vim-searchindex'
 
+" Predefined code snippets
+" TODO configure this
+"Plugin 'SirVer/ultisnips'
+
 " Color schemes
 Plugin 'joshdick/onedark.vim'
 Plugin 'dsolstad/vim-wombat256i'
@@ -102,6 +106,11 @@ au FileType html,php,markdown,mmd,text,mail,gitcommit
 """ Pydocstring """
 let g:pydocstring_doq_path = '$HOME/miniconda3/bin/doq'
 let g:pydocstring_formatter = 'google'
+
+""" Ultisnips """
+"let g:UltiSnipsExpandTrigger="<tab>"
+"let g:UltiSnipsJumpForwardTrigger="<c-b>"
+"let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
 "### Custom stuff ###"
 
@@ -173,7 +182,7 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 " use the system clipboard
-set clipboard=unnamed
+set clipboard=unnamedplus
 
 " enable persistent history, save undo files in .vim directory
 let vimDir = '$HOME/.vim'
