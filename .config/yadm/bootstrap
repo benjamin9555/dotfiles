@@ -22,6 +22,7 @@ if test -n "$BASH_VERSION"; then
     mv -f ~/.bash_it_tmp/aliases/* ~/.bash_it/aliases/
     mv -f ~/.bash_it_tmp/custom/* ~/.bash_it/custom/
     mv -f ~/.bash_it_tmp/enabled/* ~/.bash_it/enabled/
+    rm -Rf ~/.bash_it_tmp
   fi
 fi
 
