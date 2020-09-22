@@ -6,19 +6,22 @@ fi
 
 if command -v vim >/dev/null 2>&1; then
   echo "Bootstraping Vim"
-  vim '+PlugUpdate' '+PlugClean!' '+PlugUpdate' '+qall'
+  vim '+PluginInstall' '+qall'
 fi
 
 if test -n "$BASH_VERSION"; then
   PROFILE_SHELL=bash
 
-  if [ ! -d "$HOME/.bash_it" ]; then
+  if [ ! -d "$HOME/.bash_it/.git" ]; then
     echo "Installing bash-it"
+    # Move out my custom adaptions versioned via yadm
+    mv ~/.bash_it ~/.bash_it_tmp
     git clone --depth=1 "https://github.com/Bash-it/bash-it.git" "$HOME/.bash_it"
     $HOME/.bash_it/install.sh
-    #TODO experimental 
-    bash-it enable alias git
-    bash-it enable alias tmux
+    # Move back my custom adaptations
+    mv -f ~/.bash_it_tmp/aliases/* ~/.bash_it/aliases/
+    mv -f ~/.bash_it_tmp/custom/* ~/.bash_it/custom/
+    mv -f ~/.bash_it_tmp/enabled/* ~/.bash_it/enabled/
   fi
 fi
 
