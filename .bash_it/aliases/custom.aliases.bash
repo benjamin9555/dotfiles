@@ -9,5 +9,7 @@ alias dusort='du -hs *'
 # du sorted by size
 alias dusize='du -hs * | sort -h'
 
-# List todo.txt task with prio A
+# List todo.txt task with prio A/B/C
 alias tla='t lsp A'
+alias tlb='t lsp B'
+alias tlc='t lsp C'
