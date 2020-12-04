@@ -13,3 +13,6 @@ alias dusize='du -hs * | sort -h'
 alias tla='t lsp A'
 alias tlb='t lsp B'
 alias tlc='t lsp C'
+
+# List todo.txt tasks for EPFL
+alias tle='t list +e'
