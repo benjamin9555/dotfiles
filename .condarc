@@ -8,3 +8,6 @@ create_default_packages:
 channels:
   - defaults
   - conda-forge
+
+# Always accept installation.
+always_yes: true
