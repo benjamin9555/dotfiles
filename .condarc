@@ -5,7 +5,7 @@ create_default_packages:
   - ipython
   - ConfigArgParse
   - pudb
-  - line-profiler
+  - line_profiler
 channels:
   - defaults
   - conda-forge
