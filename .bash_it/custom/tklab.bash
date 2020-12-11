@@ -14,3 +14,6 @@ dgx() {
         echo "Did not find a valid tunnel in the input"
     fi
 }
+
+# Disable hdf5 file locking
+export HDF5_USE_FILE_LOCKING=FALSE
