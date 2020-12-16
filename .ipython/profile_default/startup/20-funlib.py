@@ -1,6 +1,6 @@
 try:
     import gunpowder as gp
-    print("Imported gunpowder.")
+    print("Imported gunpowder as gp.")
 except ModuleNotFoundError:
     print("Gunpowder not available in current environment.")
 
