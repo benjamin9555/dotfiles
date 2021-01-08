@@ -58,6 +58,9 @@ Plugin 'google/vim-searchindex'
 Plugin 'joshdick/onedark.vim'
 Plugin 'dsolstad/vim-wombat256i'
 
+" Markdown Preview
+Plugin 'iamcco/markdown-preview.nvim'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -104,7 +107,9 @@ au FileType html,php,markdown,mmd,text,mail,gitcommit
     \ runtime macros/emoji-ab.vim
 
 """ Pydocstring """
-let g:pydocstring_doq_path = '$HOME/miniconda3/bin/doq'
+"let g:pydocstring_doq_path = '$HOME/miniconda3/bin/doq'
+"let g:pydocstring_doq_path = '/usr/local/Caskroom/miniconda/base/bin/doq'
+let g:pydocstring_doq_path = '$CONDA_PREFIX/bin/doq'
 let g:pydocstring_formatter = 'google'
 
 """ Ultisnips """
