@@ -7,7 +7,6 @@ create_default_packages:
   - pudb
   - line_profiler
   - pytest
-  - doq
 channels:
   - defaults
   - conda-forge
