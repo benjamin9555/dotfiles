@@ -13,7 +13,7 @@ Plugin 'VundleVim/Vundle.vim'
 
 " Autocompletion
 "Plugin 'Valloric/YouCompleteMe'
-Plugin 'ajh17/VimCompletesMe'
+Plugin 'ackyshake/VimCompletesMe'
 
 " Commenting blocks of code
 Plugin 'scrooloose/nerdcommenter'
