@@ -13,7 +13,10 @@ Plugin 'VundleVim/Vundle.vim'
 
 " Autocompletion
 "Plugin 'Valloric/YouCompleteMe'
+"Plugin 'ncm2/ncm2'
 Plugin 'ackyshake/VimCompletesMe'
+Plugin 'davidhalter/jedi-vim'
+Plugin 'ervandew/supertab'
 
 " Commenting blocks of code
 Plugin 'scrooloose/nerdcommenter'
@@ -91,6 +94,14 @@ let g:ale_fix_on_save = 1
 
 """ YouCompleteMe """
 "let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
+
+"""Supertab"""
+let g:SuperTabDefaultCompletionType = "context"
+"let g:SuperTabDefaultCompletionType = "<c-n>"
+
+""" Jedi-vim """
+let g:jedi#popup_on_dot = 0
+autocmd FileType python setlocal completeopt-=preview
 
 """ Syntastic """
 "let python_highlight_all=1
