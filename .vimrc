@@ -19,7 +19,7 @@ Plugin 'davidhalter/jedi-vim'
 Plugin 'ervandew/supertab'
 
 " Commenting blocks of code
-Plugin 'scrooloose/nerdcommenter'
+Plugin 'perservim/nerdcommenter'
 
 " Syntax and Semantics checking
 " Previously had syntastic
@@ -91,13 +91,11 @@ let g:ale_fixers = {
 let g:ale_python_autopep8_options = '--aggressive' 
 let g:ale_fix_on_save = 1
 
-
 """ YouCompleteMe """
 "let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
 
-"""Supertab"""
+""" Supertab """
 let g:SuperTabDefaultCompletionType = "context"
-"let g:SuperTabDefaultCompletionType = "<c-n>"
 
 """ Jedi-vim """
 let g:jedi#popup_on_dot = 0
