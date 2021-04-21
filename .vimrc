@@ -24,7 +24,6 @@ Plugin 'perservim/nerdcommenter'
 " Syntax and Semantics checking
 " Previously had syntastic
 "Plugin 'vim-syntastic/syntastic'
-"Plugin 'w0rp/ale'
 Plugin 'dense-analysis/ale'
 " TODO try vim-polyglot
 
