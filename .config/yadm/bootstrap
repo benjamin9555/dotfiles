@@ -19,9 +19,12 @@ if test -n "$BASH_VERSION"; then
     git clone --depth=1 "https://github.com/Bash-it/bash-it.git" "$HOME/.bash_it"
     $HOME/.bash_it/install.sh
     # Move back my custom adaptations
-    mv -f ~/.bash_it_tmp/aliases/* ~/.bash_it/aliases/
-    mv -f ~/.bash_it_tmp/custom/* ~/.bash_it/custom/
-    mv -f ~/.bash_it_tmp/enabled/* ~/.bash_it/enabled/
+    rm -Rf ~/.bash_it/aliases
+    cp -R ~/.bash_it_tmp/aliases ~/.bash_it/aliases
+    rm -Rf  ~/.bash_it/custom
+    cp -R ~/.bash_it_tmp/custom ~/.bash_it/custom
+    rm -Rf  ~/.bash_it/enabled
+    cp -R ~/.bash_it_tmp/enabled ~/.bash_it/enabled
     rm -Rf ~/.bash_it_tmp
   fi
 fi
