@@ -2,10 +2,16 @@ try:
     import gputools
     print("Imported gputools.")
 except ModuleNotFoundError:
-    print("Gputools not available in current environment.")
+    pass
 
 try:
     import stardist
     print("Imported stardist.")
 except ModuleNotFoundError:
-    print("Stardist not available in current environment.")
+    pass
+
+try:
+    import augmend
+    print("Imported augmend.")
+except ModuleNotFoundError:
+    pass

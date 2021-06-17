@@ -2,4 +2,10 @@ try:
     import torch
     print("Imported torch.")
 except ModuleNotFoundError:
-    print("Torch not available in current environment.")
+    pass
+
+try:
+    import torchvision
+    print("Imported torchvision.")
+except ModuleNotFoundError:
+    pass
