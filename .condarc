@@ -7,6 +7,7 @@ create_default_packages:
   - pudb
   - line_profiler
   - pytest
+  - matplotlib
 channels:
   - defaults
   - conda-forge
