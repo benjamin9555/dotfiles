@@ -21,4 +21,4 @@ alias tle='t list +e'
 alias inap='ipython --profile=napari --gui=qt'
 
 # Tensorboard
-alias tb='tensorboard --logdir_spec'
+alias tb='tensorboard --logdir'
